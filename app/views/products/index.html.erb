@@ -1,0 +1,10 @@
+<h1>Coffee Beans</h1>
+
+<% @products.each do |product| %>
+<div class="coffee-bean">
+    <p><%= product.name %></p>
+    <p><%= product.description%></p>
+    <p>link_to "More Details", product_path(product)</p>
+</div>
+
+<% end %>
