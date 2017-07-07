@@ -1,4 +1,10 @@
 class ProductsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:show, :index]
+
+  before_action :only => [:new, :create, :edit, :update, :destroy] do
+    redirect_to new_user_session_path unless current_user && current_user.admin
+  end
+
   def index
     @products = Product.all
   end
