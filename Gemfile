@@ -34,9 +34,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Project Specific gems
-gem 'jquery-rails'
-gem 'devise'
-gem 'bootstrap-sass', '~> 3.3.6'
+  gem 'jquery-rails'
+  gem 'devise'
+  gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,6 +45,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'faker', github: 'stympy/faker'
 end
 
 group :development do
