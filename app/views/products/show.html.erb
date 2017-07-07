@@ -28,7 +28,7 @@
           <button>
             <%= link_to "Delete", product_review_path(@product, review),
               :data => {:confirm => "Are you sure?",
-              :method => "delete"}
+              :method => "delete"}, class:"delete-review"
             %>
           </button>
         <% end %>
