@@ -1,10 +1,13 @@
 <h1>Coffee Beans</h1>
 
 <% @products.each do |product| %>
-<div class="coffee-bean">
-    <p><%= product.name %></p>
-    <p><%= product.description%></p>
-    <p>link_to "More Details", product_path(product)</p>
-</div>
-
+  <%= link_to product_path(product) do %>
+    <div class="coffee-bean well">
+        <p><%= product.name %></p>
+        <p><%= product.description%></p>
+    </div>
+  <% end %>
 <% end %>
+
+
+<button><%= link_to "New Product", new_product_path %></button>
