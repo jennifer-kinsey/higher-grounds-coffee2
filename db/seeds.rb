@@ -9,7 +9,7 @@
 Product.destroy_all
 
 8.times do |index|
-  Product.create!(
+  new_product = Product.create!(
     name: Faker::Coffee.unique.blend_name,
     description: Faker::Coffee.unique.notes,
     price: Faker::Commerce.price,
@@ -17,6 +17,13 @@ Product.destroy_all
     origin: Faker::Coffee.unique.origin,
     variety: Faker::Coffee.unique.variety
     )
+
+    5.times do
+      new_product.reviews.create!(
+        author: Faker::Superhero.name,
+        content: Faker::Friends.quote
+        )
+    end
 end
 
 admin_list = [
@@ -28,4 +35,5 @@ admin_list.each do |email, password|
 end
 
 p "Created #{Product.count} products"
+p "Created #{Review.count} reviews"
 p "Created #{User.count} admin"
