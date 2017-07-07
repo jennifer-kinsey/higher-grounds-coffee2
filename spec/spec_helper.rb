@@ -13,6 +13,10 @@
 # it.
 
 require 'faker'
+require 'simplecov'
+
+SimpleCov.start
+
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
