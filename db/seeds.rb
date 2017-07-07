@@ -20,7 +20,7 @@ Product.destroy_all
 end
 
 admin_list = [
-  [ "asia@asia.com", "password123456"],
+  [ "admin@admin.com", "password123456"],
 ]
 
 admin_list.each do |email, password|

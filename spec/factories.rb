@@ -18,4 +18,10 @@ FactoryGirl.define do
     origin "Test Origin"
     variety "Test Variety"
   end
+
+  factory :review, class: Review do
+    author "Test Author"
+    content "Test Content"
+    product
+  end
 end

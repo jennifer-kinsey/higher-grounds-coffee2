@@ -21,12 +21,10 @@ Users can:
 Admins can:
 - Add, edit, or delete products
 - Delete user reviews
+* Note: There is one admin seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
 
-Additional Features:
-
-
-
-
+Email: "admin@admin.com"
+Password: "password123456"
 
 The application structure is outlined below.  
 
@@ -53,22 +51,22 @@ In your terminal:
 * `bundle install`
 * Open another terminal window and type `postgres`.  Leave this window open.
 * In your first terminal window type:
-* `rake db:create`
-* `rake db:setup`
-* `rake db:test:prepare`
+* `bundle exec rake db:create`
+* `bundle exec rake db:setup`
+* `bundle exec rake db:test:prepare`
 
 ## Development server
 
-Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `bundle exec rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 * If you would like to make changes to this project, do so in a text editor.
 * Make frequent commits with detailed comments.
 * Submit changes as pull request to Asia at akane0915 on Github.
 
-## Running unit tests
+## Running tests
 
 This app includes unit and integration testing using RSpec, Factory girl, Shouldamatchers, and Capybara for testing.
-Run `rspec` in terminal to test.
+Run `bundle exec rspec` in terminal to test.
 
 ## Technologies Used
 
