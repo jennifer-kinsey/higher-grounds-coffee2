@@ -47,7 +47,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'faker', github: 'stympy/faker'
   gem 'capybara'
-  gem 'factory_girl_rails'
+  gem "factory_girl_rails", "~> 4.0"
   gem 'simplecov', require: false
 end
 
