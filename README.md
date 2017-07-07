@@ -4,7 +4,7 @@
 
 #### By _**Asia Kane**_
 
-![Homepage](./app/assets/images/homepage.png)
+![Homepage](./app/assets/images/homepage-ss.png)
 
 ## Description
 
@@ -85,6 +85,23 @@ Run `bundle exec rspec` in terminal to test.
 
 ## Known Bugs
 _N/A_
+
+#### Screen Shots
+
+About Section
+![Aboutpage](./app/assets/images/about-ss.png)
+
+Products Section
+![Products](./app/assets/images/product-ss.png)
+
+Product Detail Section
+![Product Details](./app/assets/images/product-detail.png)
+
+New Product Section (only accessible by admins)
+![New Product](./app/assets/images/new-product-ss.png)
+
+New Review Section (only accessible by authenticated user)
+![New Review](./app/assets/images/new-review-ss.png)
 
 ## Support and contact details
 _I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
