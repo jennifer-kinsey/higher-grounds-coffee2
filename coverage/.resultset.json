@@ -736,7 +736,45 @@
         1,
         null,
         1,
-        17,
+        21,
+        null,
+        null
+      ],
+      "/Users/asiakane/Desktop/epicodus/rails/code-reviews/higher-grounds-coffee/spec/features/sign_in_pages_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -820,6 +858,6 @@
         null
       ]
     },
-    "timestamp": 1499464079
+    "timestamp": 1499464319
   }
 }
