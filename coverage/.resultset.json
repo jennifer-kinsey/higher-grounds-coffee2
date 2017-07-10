@@ -644,7 +644,7 @@
         null,
         null,
         1,
-        2,
+        1,
         null,
         null,
         1,
@@ -782,7 +782,7 @@
         1,
         null,
         1,
-        29,
+        28,
         null,
         null
       ],
@@ -834,15 +834,15 @@
       "/Users/asiakane/Desktop/epicodus/rails/code-reviews/higher-grounds-coffee/spec/features/delete_review_pages_spec.rb": [
         1,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null
@@ -990,6 +990,6 @@
         null
       ]
     },
-    "timestamp": 1499467671
+    "timestamp": 1499729606
   }
 }
