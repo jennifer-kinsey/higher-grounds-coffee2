@@ -2,15 +2,7 @@
 
 <%= link_to "Sort by Price", products_path(sort_by: "highest_price")%>
 
-<% @products.each do |product| %>
-  <%= link_to product_path(product) do %>
-    <div class="coffee-bean well">
-        <p><%= product.name %></p>
-        <p><%= product.description%></p>
-        <p><%= number_to_currency(product.price)%></p>
-    </div>
-  <% end %>
-<% end %>
+<div class="products-list"><%= render 'products' %></div>
 
 <% if current_user.try(:admin?) %>
   <button><%= link_to "New Product", new_product_path, remote: true, id: "new_product_link"%></button>

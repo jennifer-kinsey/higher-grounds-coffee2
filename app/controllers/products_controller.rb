@@ -6,10 +6,10 @@ class ProductsController < ApplicationController
   end
 
   def index
-    if params[:sort_by] == nil
-      @products = Product.all
+    if params[:sort_by] == "highest_price"
+      @products = Product.highest_price
     else
-      @products = Product.send(params[:sort_by])
+      @products = Product.all
     end
   end
 
