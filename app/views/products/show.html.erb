@@ -1,7 +1,7 @@
 <h1><%= @product.name %> Coffee</h1>
 
 <% if current_user.try(:admin?) %>
-  <button><%= link_to "Edit", edit_product_path(@product) %></button>
+  <button><%= link_to "Edit", edit_product_path(@product), remote: true, id: "edit_product_link" %></button>
   <button><%= link_to "Delete", product_path(@product),
   :data => {:confirm => "You sure?",
     :method => "delete"} %></button>
