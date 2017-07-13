@@ -2,8 +2,10 @@
 
 <%= link_to "Sort by Price", products_path(sort_by: "highest_price"), remote: true, id: "sort_by_price_link" %>
 
-<div id="products-list"><%= render 'products' %></div>
+<div id="products-list">
+  <%= render 'products' %>
+</div>
 
 <% if current_user.try(:admin?) %>
-  <%= link_to "New Product", new_product_path, remote: true, id: "new_product_link"%>
+  <%= link_to "New Product", new_product_path, remote: true, id: "new_product_link" %>
 <% end %>
