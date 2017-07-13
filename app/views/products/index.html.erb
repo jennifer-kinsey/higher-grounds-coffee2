@@ -5,5 +5,5 @@
 <div id="products-list"><%= render 'products' %></div>
 
 <% if current_user.try(:admin?) %>
-  <button><%= link_to "New Product", new_product_path, remote: true, id: "new_product_link"%></button>
+  <%= link_to "New Product", new_product_path, remote: true, id: "new_product_link"%>
 <% end %>
