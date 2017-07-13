@@ -25,9 +25,9 @@
  }
 
 .jumbotron {
-  background-image: url(jumbotron.jpg);
-  background-attachment: fixed;
-  height: 100vh;
+  // background-image: url(jumbotron.jpg);
+  // background-attachment: fixed;
+  // height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -35,16 +35,16 @@
   margin: 0;
 
   h1{
-    color: white;
+    color: black;
     font-family: 'Shrikhand', cursive;
     font-size: 6em;
     padding-top: 10%;
   }
 }
 
-.navbar-link {
-  color: white;
-}
+// .navbar-link {
+//   color: white;
+// }
 
 .about-section {
   background-image: url(about-picture.jpeg);
