@@ -6,7 +6,11 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all
+    if params[:sort_by] == nil
+      @products = Product.all
+    else
+      @products = Product.send(params[:sort_by])
+    end
   end
 
   def show
