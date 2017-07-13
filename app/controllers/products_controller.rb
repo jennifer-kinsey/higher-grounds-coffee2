@@ -8,6 +8,10 @@ class ProductsController < ApplicationController
   def index
     if params[:sort_by] == "highest_price"
       @products = Product.highest_price
+      respond_to do |format|
+        format.html { redirect_to products_path }
+        format.js
+      end
     else
       @products = Product.all
     end
